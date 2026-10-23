@@ -1,0 +1,5 @@
+/* Generic brokerage demo: contact details belong to the future brokerage. */
+.office-visit .generic-illustration img{object-fit:contain;background:#fefbef}
+.claims-guide .large-phone{font-size:clamp(20px,5vw,27px);gap:14px}
+.contact-chapter-phone{font-size:clamp(20px,4vw,25px)}
+@media(max-width:760px){.quote-phone{font-size:20px;gap:14px}}

@@ -1,0 +1,1 @@
+(()=>{'use strict';document.querySelectorAll('.claims-guide .claim-checklist').forEach(list=>{const checks=[...list.querySelectorAll('input')],counter=list.closest('.prepare-layout').querySelector('.check-status');checks.forEach(c=>c.addEventListener('change',()=>{counter.textContent=checks.filter(x=>x.checked).length+' от '+checks.length+' подготвени'}))});})();

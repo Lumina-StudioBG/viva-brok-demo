@@ -1,0 +1,20 @@
+/* Approved cream quote chapter; the original demo form behaviour is retained. */
+.quote-chapter{background:#fefbef;padding:64px 0}
+.quote-chapter-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.quote-intro h2{font-size:clamp(35px,3.6vw,53px);font-weight:800;line-height:1.12;letter-spacing:-.035em}
+.quote-intro h2 span{color:#108b8c}
+.quote-intro>p{font-size:14px;line-height:1.65;margin-top:24px;color:#586f75}
+.quote-still-life{display:block;width:100%;height:auto;max-height:330px;object-fit:contain;margin:30px auto 20px;opacity:1;filter:none;mask:none;mix-blend-mode:normal}
+.quote-phone{display:inline-flex;align-items:center;gap:22px;font-size:22px;font-weight:700;color:#143c50}
+.quote-paper{background:#fffefa;border:1px solid #dce3d8;border-radius:16px;padding:32px}
+.quote-paper>h3{font-size:21px;line-height:1.2;letter-spacing:-.035em;margin-bottom:26px}
+.quote-paper .quote-form{padding:0;border-radius:0;background:none}
+.quote-paper .quote-form label{font-size:12px;margin-bottom:18px}
+.quote-paper .quote-form input,.quote-paper .quote-form select{font-size:13px;min-height:47px;padding:11px 13px;border-radius:6px;margin-top:7px}
+.quote-paper .quote-form legend{font-size:12px;font-weight:400;color:#586f75;margin-bottom:13px}
+.quote-paper .quote-form>.button{width:100%;margin-top:6px;justify-content:center;font-size:12px}
+.quote-paper .form-note{font-size:12px;color:#586f75;line-height:1.55}
+@media(min-width:1000px){.quote-chapter{min-height:calc(100svh - var(--insurance-header-height,91px));display:flex;flex-direction:column}.quote-chapter-layout{flex:1}}
+@media(max-width:1100px){.quote-chapter-layout{gap:35px}.quote-paper{padding:26px}}
+@media(max-width:760px){.quote-chapter{padding:36px 0}.quote-chapter-layout{grid-template-columns:1fr;gap:32px}.quote-intro h2{font-size:33px}.quote-intro>p{font-size:13px}.quote-still-life{max-height:260px;margin:22px auto}.quote-phone{font-size:21px}.quote-paper{padding:24px 18px}.quote-paper .quote-form .field-pair{grid-template-columns:1fr 1fr}.quote-paper .quote-form .field-pair label+label{margin-top:0}}
+@media(max-width:360px){.quote-paper{padding-inline:12px}.quote-paper .quote-form select{padding-inline:10px 4px}}

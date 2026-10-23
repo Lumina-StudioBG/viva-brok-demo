@@ -1,0 +1,30 @@
+/* Selected office option 3: map and storefront. */
+.office-visit{background:#fffefa;padding:64px 0;color:#143c50}
+.office-visit .container{max-width:1240px}
+.office-visit .office-wide-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:32px}
+.office-visit .office-wide-heading>h2{font-size:clamp(34px,3.5vw,49px);font-weight:800;line-height:1.13;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.office-visit em{font-style:normal;color:#108b8c}
+.office-visit .office-wide-heading .contact-phone-actions{margin:0 0 3px;gap:20px}
+.office-visit .contact-chapter-phone{font-size:27px}
+.office-visit .office-three{display:grid;grid-template-columns:1.25fr .8fr;gap:38px;align-items:start}
+.office-visit .office-map iframe{width:100%;height:560px;display:block;border:0;border-radius:12px;background:#edf3e8}
+.office-visit .office-direction{display:inline-flex;gap:16px;align-items:center;font-size:12px;font-weight:750;color:#087578;text-decoration:underline;text-underline-offset:6px;margin-top:18px;padding-bottom:6px}
+.office-visit .office-direction:hover{color:#065f63}
+.office-visit .office-photo{margin:0}
+.office-visit .office-photo img{display:block;width:100%;height:auto;aspect-ratio:680/400;object-fit:cover;object-position:center;border-radius:12px}
+.office-visit .office-photo figcaption{display:none}
+.office-visit .office-address{margin-top:24px}
+.office-visit .office-address h3{font-size:14px;line-height:1.6;font-weight:750;max-width:34ch;margin:0 0 12px}
+.office-visit .office-address address{font-size:13px;color:#586f75;font-style:normal;line-height:1.8}
+.office-visit .office-hours{border-top:1px solid #dce3d8;padding-top:16px;margin-top:20px}
+.office-visit .office-hours h3{font-size:14px;margin:0 0 8px}
+.office-visit .office-hours p{font-size:13px;color:#586f75;margin:0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.office-visit .office-hours strong{color:#143c50;font-size:15px;white-space:nowrap}
+.office-visit svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}
+.office-visit .contact-viber svg{width:25px;height:25px}
+.office-visit :is(button,a):focus-visible{outline:3px solid #108b8c;outline-offset:4px}
+.office-visit ::selection{background:#d8e595;color:#143c50}
+@media(max-width:1100px){.office-visit .office-three{gap:28px}.office-visit .contact-chapter-phone{font-size:24px}.office-visit .office-wide-heading{gap:24px}.office-visit .office-wide-heading .contact-phone-actions{gap:14px}}
+@media(max-width:860px){.office-visit{padding:42px 0}.office-visit .office-wide-heading{display:block}.office-visit .office-wide-heading>h2{font-size:34px}.office-visit .office-wide-heading .contact-phone-actions{margin-top:22px}.office-visit .office-three{grid-template-columns:1fr;gap:30px}.office-visit .office-map iframe{height:330px}.office-visit .office-side{display:grid;grid-template-columns:1fr 1fr;gap:24px}.office-visit .office-side .office-photo{grid-column:1/-1}.office-visit .office-photo img{max-height:400px}.office-visit .office-address{margin:0}.office-visit .office-hours{margin:0;padding:0;border:0}.office-visit .office-hours p{gap:8px}.office-visit .contact-chapter-phone{font-size:25px}}
+@media(max-width:430px){.office-visit .office-wide-heading>h2{font-size:32px}.office-visit .office-side{display:block}.office-visit .office-side .office-address{margin-top:24px}.office-visit .office-side .office-hours{margin-top:22px;padding-top:18px;border-top:1px solid #dce3d8}}
+

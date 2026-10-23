@@ -1,0 +1,20 @@
+/* Six individual insurance types in a standard navigation disclosure. */
+.insurance-nav{position:relative;display:flex;align-items:center;gap:4px}
+.insurance-nav-toggle{width:32px;height:36px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;border:0;border-radius:6px;background:transparent;color:#143c50;padding:6px;cursor:pointer}
+.insurance-nav-toggle svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5;transition:transform .15s ease}
+.insurance-nav-toggle[aria-expanded=true] svg{transform:rotate(180deg)}
+.insurance-nav-toggle:hover{background:#e9f0e5;color:#087578}
+.insurance-menu{position:absolute;top:100%;left:-18px;width:330px;padding-top:12px;z-index:40}
+.insurance-menu ul{list-style:none;margin:0;padding:9px;background:#fffefa;border-radius:12px;box-shadow:0 12px 28px #143c5026}
+.site-header .insurance-menu a{display:block;min-height:44px;padding:13px 14px;border-radius:7px;font-size:14px;line-height:1.4;color:#143c50;font-weight:700}
+.insurance-menu a span{display:block}
+.site-header .insurance-menu a:hover,.site-header .insurance-menu a[aria-current]{background:#edf3e8;color:#087578}
+.site-header .desktop-nav{gap:20px}
+.insurance-nav-mobile{display:grid;grid-template-columns:1fr 44px}
+.insurance-nav-mobile>a{display:block;padding:13px 0;font-weight:650}
+.insurance-nav-mobile .insurance-nav-toggle{width:44px;height:44px}
+.insurance-nav-mobile .insurance-menu{position:static;grid-column:1/-1;width:auto;padding:0 0 10px}
+.insurance-nav-mobile .insurance-menu ul{background:transparent;border-left:1px solid #c5d6c4;border-radius:0;box-shadow:none;padding:0 0 0 12px;margin:3px 0 0 4px}
+.site-header .insurance-nav-mobile .insurance-menu a{padding:12px;font-size:14px}
+@media(max-width:1100px) and (min-width:861px){.site-header .desktop-nav{gap:12px;margin-right:10px}.site-header .desktop-nav>a,.site-header .insurance-nav-desktop>a{font-size:11px}.insurance-nav-toggle{width:28px}.insurance-menu{width:310px;left:-16px}}
+@media(prefers-reduced-motion:reduce){.insurance-nav-toggle svg{transition:none}}

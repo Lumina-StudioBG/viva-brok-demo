@@ -1,0 +1,26 @@
+/* The desktop opening screen ends on the logo ribbon's lower edge. */
+@media(min-width:1000px){
+ .landing-screen{height:calc(100svh - 91px);display:grid;grid-template-rows:minmax(0,1fr) auto}
+ .landing-screen .hero{min-height:0}
+ .landing-screen .hero-inner{height:100%;min-height:0;padding-top:28px;padding-bottom:28px}
+ .landing-screen .hero-art{inset:0;height:100%;width:100%}
+ .landing-screen .hero-art img{object-fit:cover;object-position:right center}
+ .landing-screen .hero-copy{max-width:560px}
+ .landing-screen .hero h1{font-size:clamp(44px,4.5vw,66px);margin-bottom:22px}
+ .landing-screen .insurer-bar{padding:22px 0 18px}
+ .landing-screen .insurer-heading{margin-bottom:15px}
+ .landing-screen .insurer-heading h2{font-size:21px}
+ .landing-screen .insurer-logos{gap:14px 32px}
+ .landing-screen .insurer-logo{height:48px}
+ .landing-screen .insurer-logo img{height:34px}
+}
+@media(min-width:1000px) and (max-height:720px){
+ .landing-screen .hero h1{font-size:43px;margin-bottom:14px}
+ .landing-screen .hero-description{font-size:13px}
+ .landing-screen .hero-actions{margin-top:20px}
+ .landing-screen .hero-note{margin-top:15px}
+ .landing-screen .insurer-heading{margin-bottom:10px}
+ .landing-screen .insurer-logo{height:42px}
+ .landing-screen .insurer-bar{padding:16px 0 14px}
+}
+

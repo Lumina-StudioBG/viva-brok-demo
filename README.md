@@ -2,7 +2,7 @@
 
 Separate public design demo using the existing six insurance pages. Forms only prepare a local preview and do not send inquiries.
 
-Live preview: https://alexandermarkovdev.github.io/viva-brok-demo/
+Live preview: https://Lumina-StudioBG.github.io/viva-brok-demo/
 
 ## Company information
 

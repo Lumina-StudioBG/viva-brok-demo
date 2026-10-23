@@ -2,7 +2,7 @@ $ErrorActionPreference='Stop'
 $repo=Split-Path $PSScriptRoot -Parent
 $pages=Join-Path $repo '_pages'
 $output=Join-Path $repo '_site'
-$remote='https://github.com/alexandermarkovdev/viva-brok-demo.git'
+$remote='https://github.com/Lumina-StudioBG/viva-brok-demo.git'
 if ((& git -C $repo remote get-url origin) -ne $remote) {throw 'Unexpected repository destination.'}
 & python (Join-Path $PSScriptRoot 'build-pages.py')
 if ($LASTEXITCODE -ne 0){throw 'Pages build failed.'}

@@ -1,0 +1,31 @@
+.claims-guide .claims-plan{background:#fefbef;padding:64px 0;scroll-margin-top:90px}
+.claims-plan .plan-heading{display:flex;justify-content:space-between;align-items:end;gap:48px;margin-bottom:32px}
+.claims-plan .plan-heading h2{font-size:clamp(32px,3.2vw,46px);margin:0}
+.claims-plan .plan-heading>p{max-width:36ch;margin:0;line-height:1.75}
+.claims-plan .plan-tabs{display:flex;border-top:1px solid #c6d5ca;border-bottom:1px solid #c6d5ca;margin-bottom:32px}
+.claims-plan .plan-tabs button{flex:1;display:flex;align-items:center;justify-content:center;gap:12px;background:transparent;border:0;padding:23px 14px;color:#143c50;font:inherit;font-size:14px;font-weight:750;cursor:pointer}
+.claims-plan .plan-tabs button+button{border-left:1px solid #dce3d8}
+.claims-plan .plan-tabs button[aria-selected=true]{background:#24575b;color:#fefbef}
+.claims-plan .plan-tabs button:hover:not([aria-selected=true]){background:#edf3e8}
+.claims-plan .plan-tabs .case-type-icon{width:26px;height:26px;flex-shrink:0;stroke-width:1.5}
+.claims-plan .plan-panel[hidden]{display:none}
+.claims-plan .plan-intro{max-width:80ch;margin-bottom:26px}
+.claims-plan .plan-intro h3{font-size:26px;margin:0 0 12px}
+.claims-plan .plan-intro p{margin:0;line-height:1.75}
+.claims-plan .plan-columns{display:grid;grid-template-columns:1.35fr 1fr;gap:64px;align-items:start}
+.claims-plan .plan-actions{list-style:none;margin:0;padding:0}
+.claims-plan .plan-actions li{display:flex;align-items:start;gap:20px;padding:17px 0;border-bottom:1px solid #dce3d8}
+.claims-plan .plan-actions li:first-child{padding-top:0}
+.claims-plan .plan-actions li>span{display:grid;place-items:center;width:30px;height:30px;flex:0 0 30px;border:1px solid #a8c0b4;border-radius:50%;color:#087578;font-size:13px;font-weight:750}
+.claims-plan .plan-actions p{margin:0;line-height:1.8}
+.claims-plan .plan-documents{display:flex;gap:20px;padding:28px;background:#edf3e8;border-radius:14px}
+.claims-plan .plan-documents>svg{width:28px;height:28px;color:#087578}
+.claims-plan .plan-documents h3{font-size:18px;margin:0 0 12px}
+.claims-plan .plan-documents p{margin:0;line-height:1.8;font-size:14px}
+.claims-plan .plan-documents a{display:inline-flex;gap:12px;align-items:center;font-size:12px;font-weight:750;color:#087578;margin-top:24px;text-underline-offset:4px}
+.claims-plan .plan-documents a:hover{text-decoration:underline}
+.claims-plan .plan-documents a svg{width:18px}
+.claims-plan .plan-guidance{font-size:11px;max-width:100ch;margin:32px 0 0;line-height:1.8}
+.claims-plan :is(button,a,[tabindex]):focus-visible{outline:3px solid #108b8c;outline-offset:4px}
+.claims-plan ::selection{background:#d8e595;color:#143c50}
+@media(max-width:860px){.claims-guide .claims-plan{padding:40px 0;scroll-margin-top:72px}.claims-plan .plan-heading{display:block}.claims-plan .plan-heading>p{margin-top:18px}.claims-plan .plan-tabs{flex-wrap:wrap}.claims-plan .plan-tabs button{flex:1 0 30%;flex-direction:column;gap:10px;padding:16px 6px;font-size:12px;line-height:1.45;min-height:96px}.claims-plan .plan-tabs button:nth-child(4){border-left:0}.claims-plan .plan-tabs button:nth-child(n+4){border-top:1px solid #dce3d8}.claims-plan .plan-columns{grid-template-columns:1fr;gap:28px}.claims-plan .plan-intro h3{font-size:23px}.claims-plan .plan-documents{padding:24px}.claims-plan .plan-tabs .case-type-icon{width:25px;height:25px}}

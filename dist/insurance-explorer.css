@@ -1,0 +1,44 @@
+.insurance-index{padding:36px 0 40px;min-height:calc(100svh - var(--insurance-header-height,91px))}
+.insurance-index>.container{width:min(1360px,calc(100% - 112px))}
+.insurance-index em{font-style:normal;color:#087578}
+.ideas-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:36px;margin-bottom:28px}
+.ideas-heading h2{font-size:clamp(34px,3.1vw,46px);line-height:1.12;font-weight:800;letter-spacing:-.035em}
+.ideas-heading>p{font-size:13px;max-width:31ch;line-height:1.7;color:#4d656c}
+.ideas-disclaimer{font-size:11px;color:#4d656c;margin-top:20px}
+.insurance-index img{height:100%;width:100%;object-fit:contain;opacity:1;filter:none;mask:none;mix-blend-mode:normal}
+.index-layout{display:grid;grid-template-columns:.75fr 1.35fr;gap:52px;align-items:stretch}
+.index-list{display:flex;flex-direction:column;border-top:1px solid #ccd8ce}
+.index-list button{display:flex;align-items:center;justify-content:space-between;gap:20px;flex:1;min-height:70px;text-align:left;border:0;border-bottom:1px solid #ccd8ce;background:none;padding:13px 16px 13px 0;color:#143c50;font-size:19px;font-weight:750;line-height:1.25}
+.index-list small{display:block;font-size:11px;line-height:1.6;color:#4d656c;font-weight:400;margin-top:6px}
+.index-list button[aria-selected=true]{background:#eaf0db;color:#087578;padding-left:18px}
+.index-list button:hover{color:#087578;background:#eff2e3}
+.index-list button .icon{width:20px;height:20px;color:#087578}
+.index-stage{display:flex;flex-direction:column;justify-content:center;min-width:0}
+.index-art{height:clamp(250px,34svh,390px);margin-top:-12px}
+.index-art img{transform:scale(1.2)}
+.stage-caption{display:flex;align-items:flex-end;gap:26px;justify-content:space-between;padding-top:20px;border-top:1px solid #ccd8ce;scroll-margin:16px 0 24px}
+.stage-caption h3{font-size:25px;letter-spacing:-.03em;line-height:1.2}
+.stage-caption p{font-size:13px;line-height:1.7;color:#4d656c;max-width:44ch;margin-top:12px}
+.stage-caption .button{flex-shrink:0;min-height:46px;font-size:12px;padding:12px 18px;gap:18px}
+
+.insurance-index{--muted:#4d656c;--line:#d8dfd3;background:#fefbef}
+html:has(.home-page){scroll-padding-top:var(--insurance-header-height,91px)}
+@media(min-width:1000px){.landing-screen .hero-inner{width:calc(100% - clamp(48px,8vw,160px));max-width:none}.landing-screen .insurer-bar>.container{width:calc(100% - clamp(48px,8vw,160px));max-width:1600px}}
+@media(min-width:1500px){.insurance-index{padding-top:48px}.index-art{height:40svh}.index-list button{min-height:82px}}
+@media(max-width:1100px){.insurance-index>.container{width:calc(100% - 64px)}.index-layout{gap:32px}.index-list button{font-size:17px}.stage-caption{display:block}.stage-caption .button{margin-top:18px}}
+@media(max-width:760px){.insurance-index{padding:34px 0 40px;min-height:0}.insurance-index>.container{width:calc(100% - 40px)}.ideas-heading{display:block;margin-bottom:25px}.ideas-heading h2{font-size:33px}.ideas-heading>p{max-width:38ch;margin-top:16px;font-size:13px}.index-layout{display:flex;flex-direction:column;gap:25px}.index-list{display:grid;grid-template-columns:1fr 1fr;border:0;gap:0 18px}.index-list button{font-size:14px;min-height:67px;padding:12px 5px 12px 0;gap:8px}.index-list small{display:none}.index-list button[aria-selected=true]{padding-left:8px}.index-list .icon{width:16px;height:16px}.index-art{height:auto;aspect-ratio:3/2;margin:12px 0 0}.stage-caption{order:-1;border-top:0;padding-top:0;scroll-margin:12px 0 96px}.index-art img{transform:none}.stage-caption h3{font-size:25px}.stage-caption p{font-size:13px}.ideas-disclaimer{font-size:11px;line-height:1.7}}
+@media(prefers-reduced-motion:no-preference){.index-list button{transition:background-color .2s ease,color .2s ease}}
+.index-art{overflow:hidden}
+@media(min-width:761px) and (max-width:860px){.stage-caption{scroll-margin:0 0 72px}}
+/* The product list switches the panel; only the chosen product carries an arrow, pointing at its details */
+.index-list button .icon{opacity:0}
+.index-list button[aria-selected=true] .icon{opacity:1}
+@media(hover:hover){.index-list button:hover .icon{opacity:.45}.index-list button[aria-selected=true]:hover .icon{opacity:1}}
+@media(max-width:760px){.index-list button .icon{transform:rotate(90deg)}}
+/* Choosing a product changes colour and content only: the row's text stays put and the panel keeps its height */
+.index-list button[aria-selected=true]{padding-left:0}
+.index-list button:hover{box-shadow:-18px 0 0 #eff2e3}
+.index-list button[aria-selected=true],.index-list button[aria-selected=true]:hover{box-shadow:-18px 0 0 #eaf0db}
+@media(max-width:760px){.index-list button:hover{box-shadow:-8px 0 0 #eff2e3}.index-list button[aria-selected=true],.index-list button[aria-selected=true]:hover{box-shadow:-8px 0 0 #eaf0db}}
+@media(prefers-reduced-motion:no-preference){.index-list button{transition:background-color .2s ease,color .2s ease,box-shadow .2s ease}}
+.stage-caption p{min-height:calc(3 * 1.7em)}

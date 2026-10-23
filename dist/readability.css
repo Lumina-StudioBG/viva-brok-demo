@@ -1,0 +1,51 @@
+/* Readability floor: loaded last on every page. Main sentences 16px, controls 15-16px, small print 14px; nothing below 14px except the logo lockup. */
+:root{--small-print:#4d656c}
+
+/* Main sentences */
+:root body :is(.ideas-heading p,.stage-caption p,.interactive-copy p,.why-reasons li,.quote-intro p,.office-address address,.office-hours p,.hero-description,.gl-wrap p,.gl-guided-plan p,.gl-final-editorial p,.gl-section article p,.plan-heading p,.plan-intro p,.plan-actions li p,.first-step-list li p,.faq-layout p,.claims-guide details p,.product-story details p,.prepare-layout p,.help-layout p,.plan-documents p,.coverage-panel p,.know-grid article p,.product-card p,.contact-details address,.contact-details p,.form-layout p,.form-result p,.insurer-heading p){font-size:16px}
+:root body :is(.claim-checklist label span,.checklist label span,.auto-product-links span){font-size:16px}
+
+/* Buttons, calls and links that act like buttons */
+:root body :is(.hero-actions .button,.hero-actions .text-button,.stage-link,.actions .cta,.actions .phone,.quote-form .button,.form-result .text-button,.claim-button,.plain-link,.gl-link,.card-link,.sub-link,.office-direction,.contact-directions,.plan-documents a,.mobile-call){font-size:16px}
+:root body .hero-actions .text-button{max-width:none}
+:root body :is(.contact-viber span,.breadcrumb,.why-process .office a,.claims-office-contact .plain-link){font-size:15px}
+
+/* Labels, tabs and short descriptions */
+:root body :is(.quote-form label,.quote-form legend,.index-list small,.plan-tabs button span,.coverage-tabs button span,.check-status,.insurance-menu a span){font-size:15px}
+:root body .step-tabs button{font-size:14px}
+:root body :is(.step-tabs button span,.first-step-list li>span,.plan-actions li>span){font-size:14px}
+
+/* Small print: 14px and a little darker on light backgrounds */
+:root body :is(.hero-note,.ideas-disclaimer,.gl-note,.plan-guidance,.claim-checklist small,.form-note,.demo-copy,.fine,.source-details p,.source-details summary,.footer-signature-meta span){font-size:14px;color:var(--small-print)}
+:root body :is(.hero-grid figcaption,.hero-layout figcaption,.interactive-composition figcaption,.why-process .office span,.source-details li a){font-size:14px}
+:root body .insurer-logo span{font-size:13px}
+
+/* Claims page: safety banner, with 112 as a real call button */
+:root body .claims-guide .safety{font-size:16px}
+:root body .claims-guide .safety strong{font-size:17px}
+.claims-guide .safety .safety-call{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:9px;background:#b4472f;color:#fff;font-size:17px;font-weight:800;text-decoration:none;white-space:nowrap;flex-shrink:0}
+.claims-guide .safety .safety-call:hover{background:#9a3a25}
+@media(max-width:760px){.claims-guide .safety .safety-call{display:flex;margin-top:12px}}
+
+/* Desktop menu */
+@media(min-width:861px){:root body .site-header :is(.desktop-nav>a,.insurance-nav-desktop>a){font-size:14px}:root body .site-header .header-cta{font-size:14px}}
+
+/* Rules that the shared list above cannot outrank */
+:root .why-process #process-panel p{font-size:16px}
+:root .product-story .go-lab :is(.gl-note,.gl-center-intro .gl-note){font-size:14px;color:var(--small-print)}
+.claims-guide .claims-office-contact>p{font-size:15px!important}
+
+/* Phones only: these are already 16px or larger on wider screens */
+@media(max-width:760px){
+:root body :is(.hero-copy p,.section-heading p){font-size:16px}
+:root body .gl-mode-buttons button{font-size:15px}
+:root body .quote-form .button{width:100%;justify-content:space-between;white-space:normal;text-align:left}
+:root body .product-story .coverage-tabs{flex-wrap:wrap}
+:root body .product-story .coverage-tabs button{flex:1 1 auto}
+}
+
+/* Tap targets: at least 44px tall without changing how the links look */
+:root body :is(.site-header .brand,.hero-actions .text-button,.actions .phone,.why-process .office a,.quote-phone,.contact-chapter-phone,.office-direction,.sub-link,.gl-link,.plain-link,.source-details li a,.contact-directions,.auto-product-links a,.card-link){min-height:44px;align-items:center}
+:root body .breadcrumb{display:inline-flex;align-items:center;min-height:44px}
+:root body .source-details summary{padding-block:10px}
+:root body .claims-guide .source-details ul{gap:0 12px}

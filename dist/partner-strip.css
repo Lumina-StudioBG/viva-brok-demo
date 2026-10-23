@@ -1,0 +1,22 @@
+/* Selected partner direction: compact dark strip. */
+.insurer-bar.partner-strip{background:#24575b;color:#fefbef;padding:37px 0}
+.insurer-bar.partner-strip>.container{display:grid;grid-template-columns:200px minmax(0,1fr);gap:45px;align-items:center;max-width:1440px}
+.partner-strip .insurer-heading{display:block;padding-right:30px;border-right:1px solid #7a9e9b;margin:0}
+.partner-strip .insurer-heading h2{font-size:30px;line-height:1.18;letter-spacing:-.03em;margin:0}
+.partner-strip .insurer-heading p{font-size:13px;line-height:1.6;color:#fffefa;margin:19px 0 0}
+.partner-strip .insurer-logos{display:flex;justify-content:center;flex-wrap:wrap;gap:21px 22px;align-items:center}
+.partner-strip .insurer-logo{width:calc((100% - 110px)/6);min-width:0;height:67px;gap:7px}
+.partner-strip .insurer-logo img{width:143px;max-width:86%;height:42px;object-fit:contain;filter:brightness(0) invert(1);mix-blend-mode:normal;opacity:1}
+.partner-strip .insurer-logo.logo-paper img{filter:grayscale(1) invert(1) brightness(1.8);mix-blend-mode:screen}
+.partner-strip .insurer-logo img[alt="ДЗИ"]{width:171px;max-width:none;height:57px}
+.partner-strip .insurer-logo img[alt="Уника"]{width:136px}
+.partner-strip .insurer-logo img[alt="Дженерали"]{width:132px}
+.partner-strip .insurer-logo img[alt="Лев Инс"]{width:126px}
+.partner-strip .insurer-logo img[alt="HDI"]{width:85px;height:42px}
+.partner-strip .insurer-logo img[alt="Виктория"]{width:124px;height:32px;filter:grayscale(1) invert(1) brightness(2.5) contrast(1.5)}
+.partner-strip .insurer-logo span{font-size:11px;color:#fffefa;line-height:1.4;text-align:center}
+/* Keep oversized source-image whitespace inside each mobile logo slot. */
+@media(max-width:760px){.partner-strip .insurer-logo{overflow:hidden}}
+@media(max-width:1100px){.insurer-bar.partner-strip>.container{grid-template-columns:170px minmax(0,1fr);gap:30px}.partner-strip .insurer-heading{padding-right:20px}.partner-strip .insurer-heading h2{font-size:26px}.partner-strip .insurer-logo{width:calc((100% - 66px)/4)}}
+@media(max-width:760px){.insurer-bar.partner-strip{padding:30px 0}.insurer-bar.partner-strip>.container{grid-template-columns:1fr;gap:26px}.partner-strip .insurer-heading{border-right:0;border-bottom:1px solid #7a9e9b;padding:0 0 22px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:20px}.partner-strip .insurer-heading h2{font-size:26px}.partner-strip .insurer-heading h2 br{display:none}.partner-strip .insurer-heading p{font-size:12px;margin:0;white-space:nowrap}.partner-strip .insurer-logos{gap:17px}.partner-strip .insurer-logo{width:calc((100% - 34px)/3);height:66px}.partner-strip .insurer-logo img{max-width:90%;height:35px}.partner-strip .insurer-logo img[alt="ДЗИ"]{width:145px;height:48px;max-width:none}.partner-strip .insurer-logo img[alt="HDI"]{width:73px;height:36px}.partner-strip .insurer-logo img[alt="Виктория"]{width:108px;height:27px}}
+@media(max-width:760px){.partner-strip .insurer-logo{height:auto;min-height:66px}}
